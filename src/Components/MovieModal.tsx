@@ -13,7 +13,7 @@ const MovieModal = ({id}: MovieModalProps) => {
     <motion.div layoutId={id.toString()} className="w-3xl bg-zinc-900 mx-auto rounded-3xl mt-10 overflow-hidden">
       <div
         className="bg-cover bg-center w-full aspect-5/3"
-        style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${makeBgPath(data?.backdrop_path || "")})`}}></div>
+        style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(24, 24, 27, 1)), url(${makeBgPath(data?.backdrop_path || "")})`}}></div>
       <div className="px-8 pb-8">
         <h2 className="text-5xl font-extrabold mb-4">{data?.title}</h2>
         <p className="text-xl mb-6">{data?.overview}</p>
